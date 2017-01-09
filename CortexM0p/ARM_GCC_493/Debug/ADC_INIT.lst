@@ -1,0 +1,593 @@
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 1
+
+
+   1              		.cpu cortex-m0plus
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"ADC_INIT.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.global	ADC_allConfigs
+  18              		.section	.rodata
+  19              		.align	2
+  20              		.type	ADC_allConfigs, %object
+  21              		.size	ADC_allConfigs, 56
+  22              	ADC_allConfigs:
+  23 0000 00000000 		.word	0
+  24 0004 01000000 		.word	1
+  25 0008 40002050 		.word	1344274496
+  26 000c 8C000490 		.word	-1878785908
+  27 0010 DA030200 		.word	132058
+  28 0014 02000200 		.word	131074
+  29 0018 0002000E 		.word	234881536
+  30 001c 00000000 		.word	0
+  31 0020 01000000 		.word	1
+  32 0024 00000000 		.word	0
+  33 0028 00000000 		.word	0
+  34 002c B0040000 		.word	1200
+  35 0030 01000000 		.word	1
+  36 0034 1700     		.short	23
+  37 0036 0000     		.space	2
+  38              		.text
+  39              	.Letext0:
+  40              		.file 1 "Generated_Source\\PSoC4\\cytypes.h"
+  41              		.file 2 "Generated_Source\\PSoC4\\ADC.h"
+  42              		.file 3 "Generated_Source\\PSoC4\\ADC_INIT.c"
+  43              		.section	.debug_info,"",%progbits
+  44              	.Ldebug_info0:
+  45 0000 82010000 		.4byte	0x182
+  46 0004 0400     		.2byte	0x4
+  47 0006 00000000 		.4byte	.Ldebug_abbrev0
+  48 000a 04       		.byte	0x4
+  49 000b 01       		.uleb128 0x1
+  50 000c 68000000 		.4byte	.LASF31
+  51 0010 01       		.byte	0x1
+  52 0011 2E010000 		.4byte	.LASF32
+  53 0015 5B010000 		.4byte	.LASF33
+  54 0019 00000000 		.4byte	.Ldebug_line0
+  55 001d 02       		.uleb128 0x2
+  56 001e 01       		.byte	0x1
+  57 001f 06       		.byte	0x6
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 2
+
+
+  58 0020 71020000 		.4byte	.LASF0
+  59 0024 02       		.uleb128 0x2
+  60 0025 01       		.byte	0x1
+  61 0026 08       		.byte	0x8
+  62 0027 5A000000 		.4byte	.LASF1
+  63 002b 02       		.uleb128 0x2
+  64 002c 02       		.byte	0x2
+  65 002d 05       		.byte	0x5
+  66 002e 40020000 		.4byte	.LASF2
+  67 0032 02       		.uleb128 0x2
+  68 0033 02       		.byte	0x2
+  69 0034 07       		.byte	0x7
+  70 0035 24000000 		.4byte	.LASF3
+  71 0039 02       		.uleb128 0x2
+  72 003a 04       		.byte	0x4
+  73 003b 05       		.byte	0x5
+  74 003c 56020000 		.4byte	.LASF4
+  75 0040 02       		.uleb128 0x2
+  76 0041 04       		.byte	0x4
+  77 0042 07       		.byte	0x7
+  78 0043 07010000 		.4byte	.LASF5
+  79 0047 02       		.uleb128 0x2
+  80 0048 08       		.byte	0x8
+  81 0049 05       		.byte	0x5
+  82 004a 26020000 		.4byte	.LASF6
+  83 004e 02       		.uleb128 0x2
+  84 004f 08       		.byte	0x8
+  85 0050 07       		.byte	0x7
+  86 0051 F6010000 		.4byte	.LASF7
+  87 0055 03       		.uleb128 0x3
+  88 0056 04       		.byte	0x4
+  89 0057 05       		.byte	0x5
+  90 0058 696E7400 		.ascii	"int\000"
+  91 005c 02       		.uleb128 0x2
+  92 005d 04       		.byte	0x4
+  93 005e 07       		.byte	0x7
+  94 005f DD010000 		.4byte	.LASF8
+  95 0063 04       		.uleb128 0x4
+  96 0064 C4010000 		.4byte	.LASF9
+  97 0068 01       		.byte	0x1
+  98 0069 BA01     		.2byte	0x1ba
+  99 006b 32000000 		.4byte	0x32
+ 100 006f 04       		.uleb128 0x4
+ 101 0070 CB010000 		.4byte	.LASF10
+ 102 0074 01       		.byte	0x1
+ 103 0075 BB01     		.2byte	0x1bb
+ 104 0077 40000000 		.4byte	0x40
+ 105 007b 04       		.uleb128 0x4
+ 106 007c 19010000 		.4byte	.LASF11
+ 107 0080 01       		.byte	0x1
+ 108 0081 BE01     		.2byte	0x1be
+ 109 0083 39000000 		.4byte	0x39
+ 110 0087 02       		.uleb128 0x2
+ 111 0088 04       		.byte	0x4
+ 112 0089 04       		.byte	0x4
+ 113 008a 54000000 		.4byte	.LASF12
+ 114 008e 02       		.uleb128 0x2
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 3
+
+
+ 115 008f 08       		.byte	0x8
+ 116 0090 04       		.byte	0x4
+ 117 0091 37000000 		.4byte	.LASF13
+ 118 0095 02       		.uleb128 0x2
+ 119 0096 01       		.byte	0x1
+ 120 0097 08       		.byte	0x8
+ 121 0098 34020000 		.4byte	.LASF14
+ 122 009c 02       		.uleb128 0x2
+ 123 009d 04       		.byte	0x4
+ 124 009e 07       		.byte	0x7
+ 125 009f 1D020000 		.4byte	.LASF15
+ 126 00a3 05       		.uleb128 0x5
+ 127 00a4 38       		.byte	0x38
+ 128 00a5 02       		.byte	0x2
+ 129 00a6 5E       		.byte	0x5e
+ 130 00a7 54010000 		.4byte	0x154
+ 131 00ab 06       		.uleb128 0x6
+ 132 00ac 7D020000 		.4byte	.LASF16
+ 133 00b0 02       		.byte	0x2
+ 134 00b1 60       		.byte	0x60
+ 135 00b2 6F000000 		.4byte	0x6f
+ 136 00b6 00       		.byte	0
+ 137 00b7 06       		.uleb128 0x6
+ 138 00b8 4A020000 		.4byte	.LASF17
+ 139 00bc 02       		.byte	0x2
+ 140 00bd 61       		.byte	0x61
+ 141 00be 6F000000 		.4byte	0x6f
+ 142 00c2 04       		.byte	0x4
+ 143 00c3 06       		.uleb128 0x6
+ 144 00c4 18020000 		.4byte	.LASF18
+ 145 00c8 02       		.byte	0x2
+ 146 00c9 62       		.byte	0x62
+ 147 00ca 6F000000 		.4byte	0x6f
+ 148 00ce 08       		.byte	0x8
+ 149 00cf 06       		.uleb128 0x6
+ 150 00d0 D2010000 		.4byte	.LASF19
+ 151 00d4 02       		.byte	0x2
+ 152 00d5 65       		.byte	0x65
+ 153 00d6 6F000000 		.4byte	0x6f
+ 154 00da 0C       		.byte	0xc
+ 155 00db 06       		.uleb128 0x6
+ 156 00dc 0A000000 		.4byte	.LASF20
+ 157 00e0 02       		.byte	0x2
+ 158 00e1 66       		.byte	0x66
+ 159 00e2 6F000000 		.4byte	0x6f
+ 160 00e6 10       		.byte	0x10
+ 161 00e7 06       		.uleb128 0x6
+ 162 00e8 17000000 		.4byte	.LASF21
+ 163 00ec 02       		.byte	0x2
+ 164 00ed 67       		.byte	0x67
+ 165 00ee 6F000000 		.4byte	0x6f
+ 166 00f2 14       		.byte	0x14
+ 167 00f3 06       		.uleb128 0x6
+ 168 00f4 0D020000 		.4byte	.LASF22
+ 169 00f8 02       		.byte	0x2
+ 170 00f9 68       		.byte	0x68
+ 171 00fa 6F000000 		.4byte	0x6f
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 4
+
+
+ 172 00fe 18       		.byte	0x18
+ 173 00ff 06       		.uleb128 0x6
+ 174 0100 00000000 		.4byte	.LASF23
+ 175 0104 02       		.byte	0x2
+ 176 0105 69       		.byte	0x69
+ 177 0106 6F000000 		.4byte	0x6f
+ 178 010a 1C       		.byte	0x1c
+ 179 010b 06       		.uleb128 0x6
+ 180 010c 39020000 		.4byte	.LASF24
+ 181 0110 02       		.byte	0x2
+ 182 0111 6A       		.byte	0x6a
+ 183 0112 6F000000 		.4byte	0x6f
+ 184 0116 20       		.byte	0x20
+ 185 0117 06       		.uleb128 0x6
+ 186 0118 FA000000 		.4byte	.LASF25
+ 187 011c 02       		.byte	0x2
+ 188 011d 6B       		.byte	0x6b
+ 189 011e 6F000000 		.4byte	0x6f
+ 190 0122 24       		.byte	0x24
+ 191 0123 06       		.uleb128 0x6
+ 192 0124 49000000 		.4byte	.LASF26
+ 193 0128 02       		.byte	0x2
+ 194 0129 6C       		.byte	0x6c
+ 195 012a 6F000000 		.4byte	0x6f
+ 196 012e 28       		.byte	0x28
+ 197 012f 06       		.uleb128 0x6
+ 198 0130 EA010000 		.4byte	.LASF27
+ 199 0134 02       		.byte	0x2
+ 200 0135 6D       		.byte	0x6d
+ 201 0136 7B000000 		.4byte	0x7b
+ 202 013a 2C       		.byte	0x2c
+ 203 013b 06       		.uleb128 0x6
+ 204 013c 3E000000 		.4byte	.LASF28
+ 205 0140 02       		.byte	0x2
+ 206 0141 6F       		.byte	0x6f
+ 207 0142 6F000000 		.4byte	0x6f
+ 208 0146 30       		.byte	0x30
+ 209 0147 06       		.uleb128 0x6
+ 210 0148 50010000 		.4byte	.LASF29
+ 211 014c 02       		.byte	0x2
+ 212 014d 76       		.byte	0x76
+ 213 014e 63000000 		.4byte	0x63
+ 214 0152 34       		.byte	0x34
+ 215 0153 00       		.byte	0
+ 216 0154 07       		.uleb128 0x7
+ 217 0155 5F020000 		.4byte	.LASF30
+ 218 0159 02       		.byte	0x2
+ 219 015a 7C       		.byte	0x7c
+ 220 015b A3000000 		.4byte	0xa3
+ 221 015f 08       		.uleb128 0x8
+ 222 0160 54010000 		.4byte	0x154
+ 223 0164 6F010000 		.4byte	0x16f
+ 224 0168 09       		.uleb128 0x9
+ 225 0169 9C000000 		.4byte	0x9c
+ 226 016d 00       		.byte	0
+ 227 016e 00       		.byte	0
+ 228 016f 0A       		.uleb128 0xa
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 5
+
+
+ 229 0170 1F010000 		.4byte	.LASF34
+ 230 0174 03       		.byte	0x3
+ 231 0175 2A       		.byte	0x2a
+ 232 0176 80010000 		.4byte	0x180
+ 233 017a 05       		.uleb128 0x5
+ 234 017b 03       		.byte	0x3
+ 235 017c 00000000 		.4byte	ADC_allConfigs
+ 236 0180 0B       		.uleb128 0xb
+ 237 0181 5F010000 		.4byte	0x15f
+ 238 0185 00       		.byte	0
+ 239              		.section	.debug_abbrev,"",%progbits
+ 240              	.Ldebug_abbrev0:
+ 241 0000 01       		.uleb128 0x1
+ 242 0001 11       		.uleb128 0x11
+ 243 0002 01       		.byte	0x1
+ 244 0003 25       		.uleb128 0x25
+ 245 0004 0E       		.uleb128 0xe
+ 246 0005 13       		.uleb128 0x13
+ 247 0006 0B       		.uleb128 0xb
+ 248 0007 03       		.uleb128 0x3
+ 249 0008 0E       		.uleb128 0xe
+ 250 0009 1B       		.uleb128 0x1b
+ 251 000a 0E       		.uleb128 0xe
+ 252 000b 10       		.uleb128 0x10
+ 253 000c 17       		.uleb128 0x17
+ 254 000d 00       		.byte	0
+ 255 000e 00       		.byte	0
+ 256 000f 02       		.uleb128 0x2
+ 257 0010 24       		.uleb128 0x24
+ 258 0011 00       		.byte	0
+ 259 0012 0B       		.uleb128 0xb
+ 260 0013 0B       		.uleb128 0xb
+ 261 0014 3E       		.uleb128 0x3e
+ 262 0015 0B       		.uleb128 0xb
+ 263 0016 03       		.uleb128 0x3
+ 264 0017 0E       		.uleb128 0xe
+ 265 0018 00       		.byte	0
+ 266 0019 00       		.byte	0
+ 267 001a 03       		.uleb128 0x3
+ 268 001b 24       		.uleb128 0x24
+ 269 001c 00       		.byte	0
+ 270 001d 0B       		.uleb128 0xb
+ 271 001e 0B       		.uleb128 0xb
+ 272 001f 3E       		.uleb128 0x3e
+ 273 0020 0B       		.uleb128 0xb
+ 274 0021 03       		.uleb128 0x3
+ 275 0022 08       		.uleb128 0x8
+ 276 0023 00       		.byte	0
+ 277 0024 00       		.byte	0
+ 278 0025 04       		.uleb128 0x4
+ 279 0026 16       		.uleb128 0x16
+ 280 0027 00       		.byte	0
+ 281 0028 03       		.uleb128 0x3
+ 282 0029 0E       		.uleb128 0xe
+ 283 002a 3A       		.uleb128 0x3a
+ 284 002b 0B       		.uleb128 0xb
+ 285 002c 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 6
+
+
+ 286 002d 05       		.uleb128 0x5
+ 287 002e 49       		.uleb128 0x49
+ 288 002f 13       		.uleb128 0x13
+ 289 0030 00       		.byte	0
+ 290 0031 00       		.byte	0
+ 291 0032 05       		.uleb128 0x5
+ 292 0033 13       		.uleb128 0x13
+ 293 0034 01       		.byte	0x1
+ 294 0035 0B       		.uleb128 0xb
+ 295 0036 0B       		.uleb128 0xb
+ 296 0037 3A       		.uleb128 0x3a
+ 297 0038 0B       		.uleb128 0xb
+ 298 0039 3B       		.uleb128 0x3b
+ 299 003a 0B       		.uleb128 0xb
+ 300 003b 01       		.uleb128 0x1
+ 301 003c 13       		.uleb128 0x13
+ 302 003d 00       		.byte	0
+ 303 003e 00       		.byte	0
+ 304 003f 06       		.uleb128 0x6
+ 305 0040 0D       		.uleb128 0xd
+ 306 0041 00       		.byte	0
+ 307 0042 03       		.uleb128 0x3
+ 308 0043 0E       		.uleb128 0xe
+ 309 0044 3A       		.uleb128 0x3a
+ 310 0045 0B       		.uleb128 0xb
+ 311 0046 3B       		.uleb128 0x3b
+ 312 0047 0B       		.uleb128 0xb
+ 313 0048 49       		.uleb128 0x49
+ 314 0049 13       		.uleb128 0x13
+ 315 004a 38       		.uleb128 0x38
+ 316 004b 0B       		.uleb128 0xb
+ 317 004c 00       		.byte	0
+ 318 004d 00       		.byte	0
+ 319 004e 07       		.uleb128 0x7
+ 320 004f 16       		.uleb128 0x16
+ 321 0050 00       		.byte	0
+ 322 0051 03       		.uleb128 0x3
+ 323 0052 0E       		.uleb128 0xe
+ 324 0053 3A       		.uleb128 0x3a
+ 325 0054 0B       		.uleb128 0xb
+ 326 0055 3B       		.uleb128 0x3b
+ 327 0056 0B       		.uleb128 0xb
+ 328 0057 49       		.uleb128 0x49
+ 329 0058 13       		.uleb128 0x13
+ 330 0059 00       		.byte	0
+ 331 005a 00       		.byte	0
+ 332 005b 08       		.uleb128 0x8
+ 333 005c 01       		.uleb128 0x1
+ 334 005d 01       		.byte	0x1
+ 335 005e 49       		.uleb128 0x49
+ 336 005f 13       		.uleb128 0x13
+ 337 0060 01       		.uleb128 0x1
+ 338 0061 13       		.uleb128 0x13
+ 339 0062 00       		.byte	0
+ 340 0063 00       		.byte	0
+ 341 0064 09       		.uleb128 0x9
+ 342 0065 21       		.uleb128 0x21
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 7
+
+
+ 343 0066 00       		.byte	0
+ 344 0067 49       		.uleb128 0x49
+ 345 0068 13       		.uleb128 0x13
+ 346 0069 2F       		.uleb128 0x2f
+ 347 006a 0B       		.uleb128 0xb
+ 348 006b 00       		.byte	0
+ 349 006c 00       		.byte	0
+ 350 006d 0A       		.uleb128 0xa
+ 351 006e 34       		.uleb128 0x34
+ 352 006f 00       		.byte	0
+ 353 0070 03       		.uleb128 0x3
+ 354 0071 0E       		.uleb128 0xe
+ 355 0072 3A       		.uleb128 0x3a
+ 356 0073 0B       		.uleb128 0xb
+ 357 0074 3B       		.uleb128 0x3b
+ 358 0075 0B       		.uleb128 0xb
+ 359 0076 49       		.uleb128 0x49
+ 360 0077 13       		.uleb128 0x13
+ 361 0078 3F       		.uleb128 0x3f
+ 362 0079 19       		.uleb128 0x19
+ 363 007a 02       		.uleb128 0x2
+ 364 007b 18       		.uleb128 0x18
+ 365 007c 00       		.byte	0
+ 366 007d 00       		.byte	0
+ 367 007e 0B       		.uleb128 0xb
+ 368 007f 26       		.uleb128 0x26
+ 369 0080 00       		.byte	0
+ 370 0081 49       		.uleb128 0x49
+ 371 0082 13       		.uleb128 0x13
+ 372 0083 00       		.byte	0
+ 373 0084 00       		.byte	0
+ 374 0085 00       		.byte	0
+ 375              		.section	.debug_aranges,"",%progbits
+ 376 0000 14000000 		.4byte	0x14
+ 377 0004 0200     		.2byte	0x2
+ 378 0006 00000000 		.4byte	.Ldebug_info0
+ 379 000a 04       		.byte	0x4
+ 380 000b 00       		.byte	0
+ 381 000c 0000     		.2byte	0
+ 382 000e 0000     		.2byte	0
+ 383 0010 00000000 		.4byte	0
+ 384 0014 00000000 		.4byte	0
+ 385              		.section	.debug_line,"",%progbits
+ 386              	.Ldebug_line0:
+ 387 0000 54000000 		.section	.debug_str,"MS",%progbits,1
+ 387      02004E00 
+ 387      00000201 
+ 387      FB0E0D00 
+ 387      01010101 
+ 388              	.LASF23:
+ 389 0000 72616E67 		.ascii	"rangeCond\000"
+ 389      65436F6E 
+ 389      6400
+ 390              	.LASF20:
+ 391 000a 73616D70 		.ascii	"sampleTime01\000"
+ 391      6C655469 
+ 391      6D653031 
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 8
+
+
+ 391      00
+ 392              	.LASF21:
+ 393 0017 73616D70 		.ascii	"sampleTime23\000"
+ 393      6C655469 
+ 393      6D653233 
+ 393      00
+ 394              	.LASF3:
+ 395 0024 73686F72 		.ascii	"short unsigned int\000"
+ 395      7420756E 
+ 395      7369676E 
+ 395      65642069 
+ 395      6E7400
+ 396              	.LASF13:
+ 397 0037 646F7562 		.ascii	"double\000"
+ 397      6C6500
+ 398              	.LASF28:
+ 399 003e 6D697363 		.ascii	"miscConfig\000"
+ 399      436F6E66 
+ 399      696700
+ 400              	.LASF26:
+ 401 0049 73617449 		.ascii	"satIntMask\000"
+ 401      6E744D61 
+ 401      736B00
+ 402              	.LASF12:
+ 403 0054 666C6F61 		.ascii	"float\000"
+ 403      7400
+ 404              	.LASF1:
+ 405 005a 756E7369 		.ascii	"unsigned char\000"
+ 405      676E6564 
+ 405      20636861 
+ 405      7200
+ 406              	.LASF31:
+ 407 0068 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 407      4320342E 
+ 407      392E3320 
+ 407      32303135 
+ 407      30333033 
+ 408 009b 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m0plus -mthumb -"
+ 408      20726576 
+ 408      6973696F 
+ 408      6E203232 
+ 408      31323230 
+ 409 00ce 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 409      67202D66 
+ 409      66756E63 
+ 409      74696F6E 
+ 409      2D736563 
+ 410              	.LASF25:
+ 411 00fa 72616E67 		.ascii	"rangeIntMask\000"
+ 411      65496E74 
+ 411      4D61736B 
+ 411      00
+ 412              	.LASF5:
+ 413 0107 6C6F6E67 		.ascii	"long unsigned int\000"
+ 413      20756E73 
+ 413      69676E65 
+ 413      6420696E 
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 9
+
+
+ 413      7400
+ 414              	.LASF11:
+ 415 0119 696E7433 		.ascii	"int32\000"
+ 415      3200
+ 416              	.LASF34:
+ 417 011f 4144435F 		.ascii	"ADC_allConfigs\000"
+ 417      616C6C43 
+ 417      6F6E6669 
+ 417      677300
+ 418              	.LASF32:
+ 419 012e 47656E65 		.ascii	"Generated_Source\\PSoC4\\ADC_INIT.c\000"
+ 419      72617465 
+ 419      645F536F 
+ 419      75726365 
+ 419      5C50536F 
+ 420              	.LASF29:
+ 421 0150 636C6B44 		.ascii	"clkDivider\000"
+ 421      69766964 
+ 421      657200
+ 422              	.LASF33:
+ 423 015b 433A5C55 		.ascii	"C:\\Users\\Zeus\\Documents\\PSoC Creator\\CE211252_"
+ 423      73657273 
+ 423      5C5A6575 
+ 423      735C446F 
+ 423      63756D65 
+ 424 0189 416D6269 		.ascii	"Ambient_Light_Sensing\\CE211252_Ambient_Light_Sensi"
+ 424      656E745F 
+ 424      4C696768 
+ 424      745F5365 
+ 424      6E73696E 
+ 425 01bb 6E672E63 		.ascii	"ng.cydsn\000"
+ 425      7964736E 
+ 425      00
+ 426              	.LASF9:
+ 427 01c4 75696E74 		.ascii	"uint16\000"
+ 427      313600
+ 428              	.LASF10:
+ 429 01cb 75696E74 		.ascii	"uint32\000"
+ 429      333200
+ 430              	.LASF19:
+ 431 01d2 73616D70 		.ascii	"sampleCtrl\000"
+ 431      6C654374 
+ 431      726C00
+ 432              	.LASF8:
+ 433 01dd 756E7369 		.ascii	"unsigned int\000"
+ 433      676E6564 
+ 433      20696E74 
+ 433      00
+ 434              	.LASF27:
+ 435 01ea 76726566 		.ascii	"vrefMvValue\000"
+ 435      4D765661 
+ 435      6C756500 
+ 436              	.LASF7:
+ 437 01f6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 437      206C6F6E 
+ 437      6720756E 
+ 437      7369676E 
+ARM GAS  C:\Users\Zeus\AppData\Local\Temp\ccITss32.s 			page 10
+
+
+ 437      65642069 
+ 438              	.LASF22:
+ 439 020d 72616E67 		.ascii	"rangeThres\000"
+ 439      65546872 
+ 439      657300
+ 440              	.LASF18:
+ 441 0218 6374726C 		.ascii	"ctrl\000"
+ 441      00
+ 442              	.LASF15:
+ 443 021d 73697A65 		.ascii	"sizetype\000"
+ 443      74797065 
+ 443      00
+ 444              	.LASF6:
+ 445 0226 6C6F6E67 		.ascii	"long long int\000"
+ 445      206C6F6E 
+ 445      6720696E 
+ 445      7400
+ 446              	.LASF14:
+ 447 0234 63686172 		.ascii	"char\000"
+ 447      00
+ 448              	.LASF24:
+ 449 0239 6368616E 		.ascii	"chanEn\000"
+ 449      456E00
+ 450              	.LASF2:
+ 451 0240 73686F72 		.ascii	"short int\000"
+ 451      7420696E 
+ 451      7400
+ 452              	.LASF17:
+ 453 024a 6E756D43 		.ascii	"numChannels\000"
+ 453      68616E6E 
+ 453      656C7300 
+ 454              	.LASF4:
+ 455 0256 6C6F6E67 		.ascii	"long int\000"
+ 455      20696E74 
+ 455      00
+ 456              	.LASF30:
+ 457 025f 4144435F 		.ascii	"ADC_CONFIG_STRUCT\000"
+ 457      434F4E46 
+ 457      49475F53 
+ 457      54525543 
+ 457      5400
+ 458              	.LASF0:
+ 459 0271 7369676E 		.ascii	"signed char\000"
+ 459      65642063 
+ 459      68617200 
+ 460              	.LASF16:
+ 461 027d 6368616E 		.ascii	"channelBase\000"
+ 461      6E656C42 
+ 461      61736500 
+ 462              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

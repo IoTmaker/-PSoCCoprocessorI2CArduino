@@ -1,0 +1,66 @@
+net ClockBlock_HFCLK
+	term   ":m0s8clockblockcell.hfclk"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_10.clock"
+	term   ":interrupt_10.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_15.clock"
+	term   ":interrupt_15.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_8.clock"
+	term   ":interrupt_8.clock"
+end ClockBlock_HFCLK
+net Net_1156
+	term   ":m0s8tcpwmcell_2.line_out"
+	switch ":m0s8tcpwmcell_2.line_out==>:ioport1:hsiom_out4.fixed_ACT_0"
+	switch ":ioport1:hsiom_out4.hsiom4_out==>:ioport1:smartio_mux_in4.direct_out"
+	switch ":ioport1:smartio_mux_in4.smartio_mux_in==>:ioport1:pin4.pin_input"
+	term   ":ioport1:pin4.pin_input"
+end Net_1156
+net Net_1921
+	term   ":m0s8scbcell_2.interrupt"
+	switch ":m0s8scbcell_2.interrupt==>:interrupt_idmux_10.in_0"
+	switch ":interrupt_idmux_10.interrupt_idmux_10__out==>:interrupt_10.interrupt"
+	term   ":interrupt_10.interrupt"
+end Net_1921
+net Net_1978
+	term   ":m0s8scbcell_0.interrupt"
+	switch ":m0s8scbcell_0.interrupt==>:interrupt_idmux_8.in_0"
+	switch ":interrupt_idmux_8.interrupt_idmux_8__out==>:interrupt_8.interrupt"
+	term   ":interrupt_8.interrupt"
+end Net_1978
+net \ADC:Net_423\
+	term   ":p4sarcell.irq"
+	switch ":p4sarcell.irq==>:interrupt_idmux_15.in_0"
+	switch ":interrupt_idmux_15.interrupt_idmux_15__out==>:interrupt_15.interrupt"
+	term   ":interrupt_15.interrupt"
+end \ADC:Net_423\
+net \EZI2C:scl_wire\
+	term   ":ioport4:pin0.fb"
+	switch ":ioport4:pin0.fb==>:ioport4:smartio_mux_out0.direct_in"
+	switch ":ioport4:smartio_mux_out0.smartio_mux_out==>:ioport4:hsiom_in0.hsiom0_in"
+	switch ":ioport4:hsiom_in0.fixed_DPSLP_2==>:m0s8scbcell_2__scl__hsiom_permute.ioport4__fixed_out_p0_DPSLP_2"
+	switch ":m0s8scbcell_2__scl__hsiom_permute.m0s8scbcell_2__scl==>:m0s8scbcell_2.scl"
+	term   ":m0s8scbcell_2.scl"
+end \EZI2C:scl_wire\
+net \EZI2C:sda_wire\
+	term   ":ioport4:pin1.fb"
+	switch ":ioport4:pin1.fb==>:ioport4:smartio_mux_out1.direct_in"
+	switch ":ioport4:smartio_mux_out1.smartio_mux_out==>:ioport4:hsiom_in1.hsiom1_in"
+	switch ":ioport4:hsiom_in1.fixed_DPSLP_2==>:m0s8scbcell_2__sda__hsiom_permute.ioport4__fixed_out_p1_DPSLP_2"
+	switch ":m0s8scbcell_2__sda__hsiom_permute.m0s8scbcell_2__sda==>:m0s8scbcell_2.sda"
+	term   ":m0s8scbcell_2.sda"
+end \EZI2C:sda_wire\
+net \I2C_1:scl_wire\
+	term   ":ioport3:pin0.fb"
+	switch ":ioport3:pin0.fb==>:ioport3:smartio_mux_out0.direct_in"
+	switch ":ioport3:smartio_mux_out0.smartio_mux_out==>:ioport3:hsiom_in0.hsiom0_in"
+	switch ":ioport3:hsiom_in0.fixed_DPSLP_2==>:m0s8scbcell_0__scl__hsiom_permute.ioport3__fixed_out_p0_DPSLP_2"
+	switch ":m0s8scbcell_0__scl__hsiom_permute.m0s8scbcell_0__scl==>:m0s8scbcell_0.scl"
+	term   ":m0s8scbcell_0.scl"
+end \I2C_1:scl_wire\
+net \I2C_1:sda_wire\
+	term   ":ioport3:pin1.fb"
+	switch ":ioport3:pin1.fb==>:ioport3:smartio_mux_out1.direct_in"
+	switch ":ioport3:smartio_mux_out1.smartio_mux_out==>:ioport3:hsiom_in1.hsiom1_in"
+	switch ":ioport3:hsiom_in1.fixed_DPSLP_2==>:m0s8scbcell_0__sda__hsiom_permute.ioport3__fixed_out_p1_DPSLP_2"
+	switch ":m0s8scbcell_0__sda__hsiom_permute.m0s8scbcell_0__sda==>:m0s8scbcell_0.sda"
+	term   ":m0s8scbcell_0.sda"
+end \I2C_1:sda_wire\

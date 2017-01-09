@@ -1,0 +1,18 @@
+# CE211252_Ambient_Light_Sensing
+# 2017-01-08 01:40:47Z
+
+# IO_0@[IOP=(0)][IoId=(0)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 0
+# IO_1@[IOP=(0)][IoId=(1)] is reserved: SWDDebugEnabled
+dont_use_io iocell 0 1
+set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\EZI2C:sda(0)\" iocell 4 1
+set_io "\EZI2C:scl(0)\" iocell 4 0
+set_io "Pin_LED(0)" iocell 1 4
+set_io "TIA_IN(0)" iocell 2 4
+set_io "TIA_OUT(0)" iocell 2 3
+set_location "\ADC:cy_psoc4_sar_1\" p4sarcell -1 -1 0
+set_location "CyDesignWideVoltageReference" p4prefcell -1 -1 1
+set_location "\PVref:cy_psoc4_pref\" p4prefcell -1 -1 0
+set_location "\Opamp_TIA:cy_psoc4_abuf\" p4abufcell -1 -1 1
+set_location "\RefBuffer:cy_psoc4_abuf\" p4abufcell -1 -1 3

@@ -1,0 +1,5 @@
+C:\Users\Zeus\Documents\PSoC Creator\CE211252_Ambient_Light_Sensing\CE211252_Ambient_Light_Sensing.cydsn\CE211252_Ambient_Light_Sensing.cyprj|a0e71e4d-5cb7-4e0f-ac5b-cf397575b06c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|dd072db9-95d5-4597-89fc-952af92a7efb
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a0202b1f-c4ff-4793-94a6-db14162838a6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|7e5df7b3-0019-4acc-9632-fdfc4854f67b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a5b8db64-e8d9-4e9d-864d-6c5b8d967610
